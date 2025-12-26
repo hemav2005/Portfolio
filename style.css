@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(180deg, #020617, #0f172a);
+  color: #e5e7eb;
+}
+
+/* HEADER */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 60px;
+  background: rgba(2, 6, 23, 0.85);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+.header nav a {
+  margin-left: 25px;
+  color: #e5e7eb;
+  text-decoration: none;
+}
+
+.header nav a:hover {
+  color: #38bdf8;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-box {
+  background: rgba(30, 41, 59, 0.6);
+  padding: 50px;
+  border-radius: 25px;
+  text-align: center;
+  backdrop-filter: blur(15px);
+  max-width: 450px;
+}
+
+.profile-ring {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px; /* thickness of the ring */
+  background: conic-gradient(
+    from 0deg,
+    #38bdf8,
+    #22d3ee,
+    #6366f1,
+    #38bdf8
+  );
+  animation: gradientRotate 6s linear infinite;
+  margin: 0 auto 22px;
+}
+
+.profile-ring img.profile-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: block;
+  background: #fff; /* optional: a small white background inside the ring */
+  padding: 5px; /* creates the thin ring effect */
+}
+
+/* Animation */
+@keyframes gradientRotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.profile-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  background: #020617;
+  padding: 4px;
+}
+
+@keyframes gradientRotate {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+
+.profile-img:hover {
+  transform: scale(1.05);
+  box-shadow:
+    0 0 0 8px rgba(56, 189, 248, 0.25),
+    0 18px 40px rgba(0, 0, 0, 0.45);
+}
+
+
+.hero h1 {
+  font-size: 2.8rem;
+}
+
+.hero span {
+  color: #38bdf8;
+}
+
+.hero h3 {
+  margin: 10px 0;
+  font-weight: 400;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 32px;
+  background: #38bdf8;
+  color: #020617;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* SECTIONS */
+.section {
+  padding: 110px 15%;
+  text-align: center;
+}
+
+.dark {
+  background: #020617;
+}
+
+/* SKILLS */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 22px;
+  margin-top: 45px;
+}
+
+.skill-card {
+  background: rgba(30, 41, 59, 0.7);
+  padding: 22px;
+  border-radius: 15px;
+  transition: transform 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+}
+
+.skill-card i {
+  display: block;
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #38bdf8;
+}
+
+/* EXPERIENCE */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.glass-card {
+  background: rgba(30, 41, 59, 0.6);
+  backdrop-filter: blur(12px);
+  padding: 28px;
+  border-radius: 18px;
+  transition: transform 0.3s;
+}
+
+.glass-card:hover {
+  transform: translateY(-8px);
+}
+
+.glass-card h4 {
+  color: #38bdf8;
+  margin: 8px 0;
+}
+
+.glass-card span {
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+/* CERTIFICATIONS */
+.cert-list {
+  list-style: none;
+  margin-top: 35px;
+}
+
+.cert-list li {
+  margin: 10px 0;
+}
+
+/* CONTACT */
+.socials a {
+  font-size: 28px;
+  margin: 15px;
+  color: #38bdf8;
+}
+
+@keyframes floatHero {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: #38bdf8;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    background: #020617;
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  nav a {
+    margin: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+nav a.active {
+  color: #38bdf8;
+  font-weight: bold;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  margin-left: 15px;          /* spacing from other button */
+  font-size: 16px;
+  font-weight: 500;
+  color: #0ea5e9;             /* blue text */
+  background: transparent;     /* transparent for outlined style */
+  border: 2px solid #0ea5e9;  /* blue border */
+  border-radius: 30px;         /* pill shape */
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+  background: #0ea5e9;         /* filled on hover */
+  color: #fff;                 /* white text on hover */
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
