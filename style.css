@@ -265,7 +265,42 @@ body {
 nav a.active {
   color: #38bdf8;
   font-weight: bold;
+} 
+
+.projects-section {
+  padding: 60px 20px;
 }
+
+.project-card {
+  max-width: 800px;
+  margin: auto;
+  background: #0f172a;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+.project-card h3 {
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+.project-card img {
+  width: 100%;
+  margin: 15px 0;
+  border-radius: 10px;
+}
+
+.project-btn {
+  display: inline-block;
+  padding: 10px 16px;
+  background: #38bdf8;
+  color: #000;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 
 .download-btn {
   display: inline-block;
@@ -287,3 +322,4 @@ nav a.active {
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
+
