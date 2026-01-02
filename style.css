@@ -293,12 +293,20 @@ nav a.active {
 
 .project-btn {
   display: inline-block;
-  padding: 10px 16px;
-  background: #38bdf8;
-  color: #000;
-  border-radius: 8px;
+  padding: 12px 22px;
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: #020617;
+  border-radius: 10px;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  margin-right: 12px;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.project-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(56, 189, 248, 0.4);
 }
 
 
@@ -327,6 +335,10 @@ nav a.active {
   font-size: 36px;
   margin-bottom: 40px;
   color: #e5e7eb;
+}
+
+.project-buttons {
+  margin-top: 15px;
 }
 
 
