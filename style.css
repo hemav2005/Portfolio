@@ -1,4 +1,12 @@
 * {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -308,6 +316,35 @@ nav a.active {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(56, 189, 248, 0.4);
 }
+@media (max-width: 768px) {
+  .projects-section {
+    padding: 40px 15px;
+  }
+
+  .project-card {
+    padding: 20px;
+  }
+
+  .project-card h3 {
+    font-size: 20px;
+  }
+
+  .project-card p,
+  .project-card li {
+    font-size: 15px;
+  }
+
+  .project-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-btn {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
 
 
 .download-btn {
@@ -340,5 +377,32 @@ nav a.active {
 .project-buttons {
   margin-top: 15px;
 }
+
+@media (max-width: 768px) {
+  nav {
+    padding: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  section h2 {
+    text-align: center;
+    font-size: 26px;
+  }
+}
+img, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+
 
 
