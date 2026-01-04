@@ -475,6 +475,32 @@ img, iframe {
   display: inline-block;
   margin-top: 12px;
 }
+/* Project header alignment */
+.project-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+/* Project numbering */
+.project-number {
+  font-size: 18px;
+  font-weight: 700;
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.15);
+  padding: 6px 10px;
+  border-radius: 8px;
+  min-width: 36px;
+  text-align: center;
+}
+
+/* Ensure all project titles align perfectly */
+.project-card h3 {
+  margin: 0;
+  line-height: 1.4;
+}
+
 
 
 
