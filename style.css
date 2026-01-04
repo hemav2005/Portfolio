@@ -419,7 +419,62 @@ img, iframe {
   background-color: #1e40af;
 }
 
+/* ---------- Project Card Consistency Fix ---------- */
 
+.project-card {
+  padding: 30px;
+  margin-bottom: 40px;
+}
+
+/* Title alignment */
+.project-title {
+  margin-left: 0;
+  padding-left: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+/* Description */
+.project-desc {
+  margin-top: 12px;
+  line-height: 1.6;
+}
+
+/* Bullet points */
+.project-points {
+  margin-top: 10px;
+  padding-left: 18px;
+}
+
+/* Buttons container */
+.project-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+/* Unified button style */
+.btn {
+  background: #38bdf8;
+  color: #0f172a;
+  padding: 10px 18px;
+  border-radius: 8px; /* NOT pill */
+  font-weight: 500;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(56, 189, 248, 0.35);
+}
+
+/* GitHub button same size as others */
+.btn-github {
+  display: inline-block;
+  margin-top: 12px;
+}
 
 
 
